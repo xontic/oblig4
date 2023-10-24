@@ -7,15 +7,15 @@ namespace oblig_4
     {
         static void Main(string[] args)
         {
-            //            Oppgave 1
-            //Lag et program som leser 10 tekststrenger(fra tastatur) og lagrer disse i et «passende»
-            //collection - objekt). Deretter skal programmet vise(skrive ut til skjerm) alle tekststrenger på to
-            //forskjellige måter:
-            //• i alfabetiske rekkefølge(først),
-            //• sortert pga. antall av bokstaver ‘a’ (deretter).
+            // Oppgave 1
+            // Lag et program som leser 10 tekststrenger(fra tastatur) og lagrer disse i et «passende»
+            // collection - objekt). Deretter skal programmet vise(skrive ut til skjerm) alle tekststrenger på to
+            // forskjellige måter:
+            // • i alfabetiske rekkefølge(først),
+            // • sortert pga. antall av bokstaver ‘a’ (deretter).
 
-            //            Du skal bruke passende Collections - datatype(r) i hver oppgave.Det er ikke lov å bruke ‘vanlige
-            //tabeller’ (med[])
+            // Du skal bruke passende Collections - datatype(r) i hver oppgave.Det er ikke lov å bruke ‘vanlige
+            // tabeller’ (med[])
 
             List<string> inputStrings = new List<string>();
             for (int i = 0; i < 10; i++)
@@ -31,6 +31,40 @@ namespace oblig_4
             {
                 Console.WriteLine(input);
             }
+
+
+
+            // sortert pga. antall av bokstaver ‘a’ (deretter).
+
+            static void CountA(string input)
+            {
+                int count = 0;
+                foreach (char letter in input)
+                {
+                    if (letter == 'a')
+                    {
+                        count++;
+                    }
+                }
+                return count;
+            }
+
+            // vi må lage en liste som inneholder antall a'er i hver string
+
+            List<int> aCount = new List<int>();
+            foreach (string input in inputStrings)
+            {
+                aCount.Add(CountA(input));
+            }
+
+
+
+
+
+
+
+
+
 
 
 
