@@ -26,30 +26,31 @@ namespace oblig_4
             }
 
             // alfabetisk rekkefølge 
-                
-
-
-            // siden dette er en liste kan vi bruke sort det er og et alternativ å bruke boble sortering kansje 
             inputStrings.Sort();
             foreach (string input in inputStrings)
             {
                 Console.WriteLine(input);
             }
 
-            
+
+
+            // siden dette er en liste kan vi bruke sort det er og et alternativ å bruke boble sortering kansje 
 
 
 
-            
 
 
-        //for (int i = 0; i < 10; i++)
-        //    {
-        //    Console.WriteLine("Skriv inn en tekststreng");
-        //    string input = Console.ReadLine();
-        //        string[] inputArray = new string[10];
-        //        inputArray[i] = input;
-        //    }
+
+
+
+
+            //for (int i = 0; i < 10; i++)
+            //    {
+            //    Console.WriteLine("Skriv inn en tekststreng");
+            //    string input = Console.ReadLine();
+            //        string[] inputArray = new string[10];
+            //        inputArray[i] = input;
+            //    }
 
         }
     }
