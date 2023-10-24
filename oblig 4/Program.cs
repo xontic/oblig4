@@ -3,7 +3,7 @@ using System.Runtime.Intrinsics.X86;
 
 namespace oblig_4
 {
-    internal class Program
+    internal class oppg1
     {
         static void Main(string[] args)
         {
@@ -25,7 +25,22 @@ namespace oblig_4
                 inputStrings.Add(input);
             }
 
+            // alfabetisk rekkefølge 
+                
+
+
             // siden dette er en liste kan vi bruke sort det er og et alternativ å bruke boble sortering kansje 
+            inputStrings.Sort();
+            foreach (string input in inputStrings)
+            {
+                Console.WriteLine(input);
+            }
+
+            
+
+
+
+            
 
 
         //for (int i = 0; i < 10; i++)
