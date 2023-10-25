@@ -36,7 +36,7 @@ namespace oblig_4
 
             // sortert pga. antall av bokstaver ‘a’ (deretter).
 
-            static void CountA(string input)
+            static void CountA(string input) // teller antall av bokstaven a 
             {
                 int count = 0;
                 foreach (char letter in input)
